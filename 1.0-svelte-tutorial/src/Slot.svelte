@@ -1,6 +1,6 @@
 <script>
 import { slide } from 'svelte/transition';
-let visible = true;
+export let visible = false;
 </script>
 
 

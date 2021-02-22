@@ -1,14 +1,18 @@
 <script>
-import Slot from './components/Slot.svelte';
+import Slot from './Slot.svelte';
 
 import HelloWorld from './steps/0.HelloWorld.svelte';
 import CurlyBraces from './steps/1.CurlyBraces.svelte';
 import Attributes from './steps/2.Attributes.svelte';
+import Components from './steps/3.Components.svelte';
+import Events from './steps/4.Events.svelte';
+import Bindings from './steps/5.Bindings.svelte';
+import Graph from './steps/-1.Graph.svelte';
 </script>
 
 
 <main>
-  <Slot>
+  <Slot visible={true}>
     <HelloWorld/>
   </Slot>
 
@@ -19,6 +23,23 @@ import Attributes from './steps/2.Attributes.svelte';
   <Slot>
     <Attributes/>
   </Slot>
+
+  <Slot>
+    <Components/>
+  </Slot>
+
+  <Slot>
+    <Events/>
+  </Slot>
+
+  <Slot>
+    <Bindings/>
+  </Slot>
+
+  <Slot>
+    <Graph/>
+  </Slot>
+
 </main>
 
 
@@ -34,6 +55,8 @@ import Attributes from './steps/2.Attributes.svelte';
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 main {

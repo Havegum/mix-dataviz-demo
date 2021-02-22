@@ -1,7 +1,7 @@
 <script>
-let name = 'MIX';
-let image = 'success.png';
+let name = 'mix';
+// success.png, 404.png
 </script>
 
-<h1>Hei, {name}!</h1>
-<img src="{image}">
+<h1>Hei, {name.toUpperCase()}!</h1>
+<!-- img -->
