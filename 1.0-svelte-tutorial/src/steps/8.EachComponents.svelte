@@ -9,4 +9,6 @@ let messages = [
 </script>
 
 
-<Post text="Dette er en tekst" color="teal" points="2"/>
+{#each messages as message}
+  <Post text={message.text} color={message.color} points={message.points}/>
+{/each}

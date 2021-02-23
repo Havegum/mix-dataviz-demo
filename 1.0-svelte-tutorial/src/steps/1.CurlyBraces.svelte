@@ -2,4 +2,4 @@
 let name = 'mix';
 </script>
 
-<h1>Hei, {name}!</h1>
+<h1>Hei, {name.toUpperCase()}!</h1>

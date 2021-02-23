@@ -1,6 +1,7 @@
 <script>
-export let points;
+export let points = 0;
 export let color = 'red';
+export let text;
 </script>
 
 

@@ -1,1 +1,6 @@
-<h1>Hei, verden!</h1>
+<script>
+let name = 'mix';
+</script>
+
+
+<h1>Hei, {name}!</h1>

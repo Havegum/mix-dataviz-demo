@@ -6,4 +6,4 @@ let image = 'success.png';
 <h1>Hei, {name.toUpperCase()}!</h1>
 <img src={image} />
 
-<!-- input -->
+<input type="text" bind:value={name} />
