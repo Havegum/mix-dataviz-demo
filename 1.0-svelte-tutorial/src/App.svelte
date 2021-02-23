@@ -4,10 +4,13 @@ import Slot from './Slot.svelte';
 import HelloWorld from './steps/0.HelloWorld.svelte';
 import CurlyBraces from './steps/1.CurlyBraces.svelte';
 import Attributes from './steps/2.Attributes.svelte';
-import Components from './steps/3.Components.svelte';
-import Bindings from './steps/4.Bindings.svelte';
-import Events from './steps/5.Events.svelte';
+import Bindings from './steps/3.Bindings.svelte';
+import Events from './steps/4.Events.svelte';
+import Components from './steps/5.Components.svelte';
 import IfBlock from './steps/6.IfBlock.svelte';
+import EachBlock from './steps/7.EachBlock.svelte';
+import Animation from './steps/8.Animation.svelte';
+import Vaccine from './steps/-2.Vaccine.svelte';
 import Graph from './steps/-1.Graph.svelte';
 </script>
 
@@ -26,10 +29,6 @@ import Graph from './steps/-1.Graph.svelte';
   </Slot>
 
   <Slot>
-    <Components/>
-  </Slot>
-
-  <Slot>
     <Bindings/>
   </Slot>
 
@@ -38,7 +37,23 @@ import Graph from './steps/-1.Graph.svelte';
   </Slot>
 
   <Slot>
+    <Components/>
+  </Slot>
+
+  <Slot>
     <IfBlock/>
+  </Slot>
+
+  <Slot>
+    <EachBlock/>
+  </Slot>
+
+  <Slot>
+    <Animation/>
+  </Slot>
+
+  <Slot>
+    <Vaccine/>
   </Slot>
 
   <Slot>
