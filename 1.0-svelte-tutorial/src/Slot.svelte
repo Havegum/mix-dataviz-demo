@@ -33,6 +33,7 @@ section {
   opacity: 0.2;
   transition: opacity 400ms;
   min-height: 5em;
+  overflow: hidden;
 }
 
 .visible {

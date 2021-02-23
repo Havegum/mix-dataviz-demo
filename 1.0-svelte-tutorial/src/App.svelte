@@ -5,8 +5,9 @@ import HelloWorld from './steps/0.HelloWorld.svelte';
 import CurlyBraces from './steps/1.CurlyBraces.svelte';
 import Attributes from './steps/2.Attributes.svelte';
 import Components from './steps/3.Components.svelte';
-import Events from './steps/4.Events.svelte';
-import Bindings from './steps/5.Bindings.svelte';
+import Bindings from './steps/4.Bindings.svelte';
+import Events from './steps/5.Events.svelte';
+import IfBlock from './steps/6.IfBlock.svelte';
 import Graph from './steps/-1.Graph.svelte';
 </script>
 
@@ -29,11 +30,15 @@ import Graph from './steps/-1.Graph.svelte';
   </Slot>
 
   <Slot>
+    <Bindings/>
+  </Slot>
+
+  <Slot>
     <Events/>
   </Slot>
 
   <Slot>
-    <Bindings/>
+    <IfBlock/>
   </Slot>
 
   <Slot>
@@ -60,7 +65,7 @@ import Graph from './steps/-1.Graph.svelte';
 }
 
 main {
-  margin: 2em 0;
+  margin: 2em 0 8em;
   font-family: Inter, sans-serif;
   color: #333;
   display: grid;
@@ -75,5 +80,10 @@ main > :global(*) {
 :global(img) {
   display: block;
   width: 100%;
+}
+
+:global(button) {
+  font-size: inherit;
+  padding: 0 4px;
 }
 </style>
