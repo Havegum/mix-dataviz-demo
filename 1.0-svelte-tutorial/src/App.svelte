@@ -6,10 +6,11 @@ import CurlyBraces from './steps/1.CurlyBraces.svelte';
 import Attributes from './steps/2.Attributes.svelte';
 import Bindings from './steps/3.Bindings.svelte';
 import Events from './steps/4.Events.svelte';
-import Components from './steps/5.Components.svelte';
-import IfBlock from './steps/6.IfBlock.svelte';
-import EachBlock from './steps/7.EachBlock.svelte';
-import Animation from './steps/8.Animation.svelte';
+import IfBlock from './steps/5.IfBlock.svelte';
+import EachBlock from './steps/6.EachBlock.svelte';
+import Components from './steps/7.Components.svelte';
+import EachComponents from './steps/8.EachComponents.svelte';
+import Animation from './steps/9.Animation.svelte';
 import Vaccine from './steps/-2.Vaccine.svelte';
 import Graph from './steps/-1.Graph.svelte';
 </script>
@@ -35,17 +36,20 @@ import Graph from './steps/-1.Graph.svelte';
   <Slot>
     <Events/>
   </Slot>
-
-  <Slot>
-    <Components/>
-  </Slot>
-
   <Slot>
     <IfBlock/>
   </Slot>
 
   <Slot>
     <EachBlock/>
+  </Slot>
+
+  <Slot>
+    <Components/>
+  </Slot>
+
+  <Slot>
+    <EachComponents/>
   </Slot>
 
   <Slot>
