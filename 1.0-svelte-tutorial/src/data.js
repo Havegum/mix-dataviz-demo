@@ -1,4 +1,5 @@
 import timeseries from './timeseries.json';
+import vaccineData from './vaccines.json';
 
 function parseDateISOString (str) {
   if (!str) return new Date(NaN);
